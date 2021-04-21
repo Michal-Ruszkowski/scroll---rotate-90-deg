@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #2f3336;
+}
+
+.square{
+    width:20vw;
+    height:20vh;
+    background-color: forestgreen;
+    border: 3px solid darkgreen;
+    margin:5vh auto;
+    visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes rotate180deg{
+    0% { -webkit-transform: perspective(400px) rotateY(-90deg); transform: perspective(400px) rotateY(-90deg); }
+    100% { -webkit-transform: perspective(400px) rotateY(0deg); transform: perspective(400px) rotateY(0deg); }
+}
+
+@keyframes rotate180deg{
+    0% { -webkit-transform: perspective(400px) rotateY(-90deg); transform: perspective(400px) rotateY(-90deg); }
+    100% { -webkit-transform: perspective(400px) rotateY(0deg); transform: perspective(400px) rotateY(0deg); }
+}
